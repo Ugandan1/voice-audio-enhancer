@@ -21,7 +21,7 @@ st.write(
 
 )
 
-uploaded_file = st.file_uploader("Choose an audio file", type=["mp3", "wav", "mp4", "m4a"], help="Maximum file size: 50 MB.")
+uploaded_file = st.file_uploader("Choose an audio file", type=["wav", "mp3", "m4a", "mp4", "amr"]), help="Maximum file size: 50 MB.")
 
 if uploaded_file is not None:
     if uploaded_file.size > MAX_UPLOAD_BYTES:
